@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light --default, dark;
+}
+
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light --default, dark;
+}
+
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+
+  /* Brand Colors: Deep & Trustworthy */
+  --color-primary: oklch(35% 0.08 250);    /* Midnight Blue - Decent & Deep */
+  --color-secondary: oklch(60% 0.04 250);  /* Muted Steel - Professional */
+  --color-accent: oklch(75% 0.12 90);      /* Champagne Gold - For a touch of luxury */
+
+  /* Base Colors: Clean & Professional */
+  --color-base-100: oklch(99% 0.005 250);  /* Off-White - Very clean */
+  --color-base-200: oklch(96% 0.01 250);   /* Soft Fog Gray */
+  --color-base-300: oklch(90% 0.02 250);   /* Gentle Metallic border */
+
+  /* Content: Excellent Readability */
+  --color-neutral: oklch(25% 0.02 250);    /* Graphite Text - Not pitch black */
+  --color-neutral-content: oklch(98% 0.01 250);
+
+  /* Feedback: Muted tones */
+  --color-success: oklch(65% 0.1 160);
+  --color-error: oklch(55% 0.12 30);
+  --color-warning: oklch(82% 0.1 85);
+  --color-info: oklch(65% 0.08 240);
+}
+
+@plugin "daisyui/theme" {
+  name: "dark";
+
+  /* Brand Colors: Subtle Luxury */
+  --color-primary: oklch(75% 0.06 250);    /* Soft Metallic Blue */
+  --color-secondary: oklch(50% 0.03 250);  /* Deep Slate */
+  --color-accent: oklch(80% 0.1 90);       /* Soft Gold Accent */
+
+  /* Base Colors: Premium Dark Space */
+  --color-base-100: oklch(15% 0.01 250);   /* Deep Charcoal */
+  --color-base-200: oklch(12% 0.01 250);   /* Rich Black */
+  --color-base-300: oklch(20% 0.015 250);  /* Subtle highlight for cards */
+
+  /* Content */
+  --color-neutral: oklch(92% 0.01 250);    /* Soft Silver text */
+  --color-neutral-content: oklch(10% 0.01 250);
+}
+
+@layer base {
+  body {
+    @apply antialiased transition-colors duration-500 tracking-tight;
+    font-family: 'Inter', sans-serif; /* Recommended for a decent look */
+  }
+}
