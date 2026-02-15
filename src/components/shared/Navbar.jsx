@@ -7,7 +7,6 @@ import {
   HiCog,
   HiStar,
   HiUserCircle,
-  HiSearch,
   HiSun,
   HiMoon,
   HiLogin,
@@ -16,8 +15,6 @@ import {
 
 const Navbar = () => {
   const [theme, setTheme] = useState("light");
-  
-  // ডেমো ইউজার লজিক (পরবর্তীতে API/NextAuth থেকে আসবে)
   const [user, setUser] = useState({ isLoggedIn: false, role: "user" }); 
 
   useEffect(() => {
@@ -56,7 +53,7 @@ const Navbar = () => {
           <Link href="/" className="flex items-center gap-2 group">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg">C</div>
             <span className="text-2xl font-black tracking-tighter text-primary italic">
-              CAR<span className="text-accent">SQURE</span>
+              CAR<span className="text-accent">SQUARE</span>
             </span>
           </Link>
         </div>
