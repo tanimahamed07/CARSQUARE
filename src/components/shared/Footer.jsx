@@ -69,7 +69,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <FaPhoneAlt className="text-accent" />
-                <span>+880 1234 567 890</span>
+                <span>+880 1885124569</span>
               </li>
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-accent" />
