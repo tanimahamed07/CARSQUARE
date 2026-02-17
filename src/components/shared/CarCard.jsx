@@ -5,9 +5,7 @@ import { MdSpeed, MdVerified } from "react-icons/md";
 
 const CarCard = ({ car }) => {
   return (
-    <div
-      className="group flex flex-col bg-base-200 rounded-3xl overflow-hidden border border-base-300 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-2 h-full"
-    >
+    <div className="group flex flex-col bg-base-200 rounded-3xl overflow-hidden border border-base-300 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-2 h-full">
       {/* Image Wrapper */}
       <div className="relative aspect-[16/10] overflow-hidden">
         <img
@@ -67,7 +65,7 @@ const CarCard = ({ car }) => {
         {/* Action Button */}
         <div className="mt-auto">
           <Link
-            href={`/cars/${car._id}`}
+            href={`/inventory/${car._id}`}
             className="btn btn-outline btn-primary btn-block rounded-xl group-hover:btn-active transition-all"
           >
             View Details
